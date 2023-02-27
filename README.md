@@ -11,3 +11,6 @@ make
 make gen
 ```
 The result is placed in `testcases/*.j` and can be further converted to binary Java class files via [Jasmin](https://jasmin.sourceforge.net/).
+
+## AST
+![](ast.jpg)
