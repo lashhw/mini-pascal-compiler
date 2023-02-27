@@ -10,7 +10,7 @@ SRCS    = $(PARSER) $(SCANNER)
 OBJS    = $(OBJDIR)/$(SCANNER).c $(OBJDIR)/$(PARSER).c
 OBJDIR  = obj
 TESTDIR = testcases
-ASM     = fibonacci_recursive.j qsort.j test1.j
+ASM     = $(TESTDIR)/fibonacci_recursive.j $(TESTDIR)/qsort.j $(TESTDIR)/test1.j
 
 all: $(OBJDIR) $(EXEC)
 
@@ -28,5 +28,5 @@ $(EXEC): $(OBJS)
 	
 gen: $(ASM)
 	
-%.j: $(TESTDIR)/%.p
+$(TESTDIR)/%.j: $(TESTDIR)/%.p
 	./$(EXEC) $< -o $@
