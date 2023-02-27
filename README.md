@@ -6,7 +6,8 @@ NYCU 2022 Fall "Introduction to Compiler Design" Final Project
 make
 ```
 
-## Generate JVM Bytecode
+## Generate JVM Assembly
 ```bash
 make gen
 ```
+The result is placed in `testcases/*.j` and can be further converted to binary Java class files via [Jasmin](https://jasmin.sourceforge.net/).
